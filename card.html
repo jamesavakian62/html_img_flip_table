@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th><div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="car.png" alt="Avatar" style="width:300px;height:300px;" />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1> 
+            <p>Architect & Engineer</p> 
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div> 1</th>
+      <th><div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="car.png" alt="Avatar" style="width:300px;height:300px;" />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1> 
+            <p>Architect & Engineer</p> 
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div> 2</th>
+      <th><div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="car.png" alt="Avatar" style="width:300px;height:300px;" />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1> 
+            <p>Architect & Engineer</p> 
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div> 3</th>
+      <th><div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="car.png" alt="Avatar" style="width:300px;height:300px;" />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1> 
+            <p>Architect & Engineer</p> 
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div> 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&<div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="car.png" alt="Avatar" style="width:300px;height:300px;" />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1> 
+            <p>Architect & Engineer</p> 
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>;</td>
+      <td>&<div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="car.png" alt="Avatar" style="width:300px;height:300px;" />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1> 
+            <p>Architect & Engineer</p> 
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>;</td>
+      <td>&<div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="car.png" alt="Avatar" style="width:300px;height:300px;" />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1> 
+            <p>Architect & Engineer</p> 
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>;</td>
+      <td>&<div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="car.png" alt="Avatar" style="width:300px;height:300px;" />
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1> 
+            <p>Architect & Engineer</p> 
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+</body>
+
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6">
+                    <h3> Company </h3>
+                    <ul>
+                        <li> <a href="#"> About Us </a> </li>
+                        <li> <a href="#"> Careers </a> </li>
+                        <li> <a href="#"> Contact Us </a> </li>
+                        <li> <a href="#"> Terms & Conditions </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6">
+                    <h3> Shop </h3>
+                    <ul>
+                        <li> <a href="#"> My Account </a> </li>
+                        <li> <a href="#"> Order Tracking </a> </li>
+                        <li> <a href="#"> Wisthlist </a> </li>
+                        <li> <a href="#"> Elements </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6">
+                    <h3> Help </h3>
+                    <ul>
+                        <li> <a href="#"> FAQ </a> </li>
+                        <li> <a href="#"> Help </a> </li>
+                        <li> <a href="#"> Support </a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-6 ">
+                    <h3> Contact </h3>
+                    <ul>
+                        <li> <a href="#"> 123, Some Street, City, Country </a> </li>
+                        <li> <a href="#"> +1 (123) 456 7890 </a> </li>
+                        <li> <a href="#">
+                            </a> 
+                        </li>
+                            <li> <a href="#">
+                                here
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+</footer>
+</html>
